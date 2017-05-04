@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_cart_view"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+            android:id="@id/iv_img"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:background="@drawable/common_gray_round_bg"
+            android:padding="10dp"
+            android:scaleType="centerCrop" />
+    
+    <TextView 
+        android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="3室2厅"
+            android:textColor="@color/C7"
+            android:textSize="@dimen/F5"/>
+    
+    <TextView 
+        android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_img"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="20dp"
+            android:text="89平米"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F4"/>
+
+</RelativeLayout>

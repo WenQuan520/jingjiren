@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="title_bar" type="id"/>
+    <item name="bt_title_left" type="id"/>
+    <item name="bt_title_divider_line" type="id"/>
+    <item name="title_name" type="id"/>
+    <item name="bt_title_right" type="id"/>
+    <item name="bt_title_right_second" type="id"/>
+    <item name="divider" type="id"/>
+    <item name="divider_line1" type="id"/>
+    <item name="divider_line2" type="id"/>
+    <item name="divider_line3" type="id"/>
+    <item name="divider_line4" type="id"/>
+    <item name="divider_line5" type="id"/>
+    <item name="common_blank_page_img" type="id" />
+    <item name="common_blank_page_tv" type="id" />
+    <item name="common_blank_page_bt" type="id" />
+    <item name="common_error_page_img" type="id" />
+    <item name="common_error_page_tv" type="id" />
+    <item name="common_error_page_bt" type="id" />
+    <item name="common_error_page_progressBar" type="id" />
+    <item name="tag_page_viewpager" type="id" />
+    <item name="tab_page_indicator" type="id" />
+    <item name="fragment_container" type="id" />
+    <item name="listview" type="id" />
+    <item name="title_view" type="id" />
+    <item name="tv_scan" type="id" />
+    <item name="bt_search" type="id" />
+    <item name="tv_msg" type="id" />
+    <item name="vp_imgs" type="id" />
+    <item name="gridview" type="id" />
+    <item name="vp_banners" type="id" />
+    <item name="iv_icon" type="id" />
+    <item name="tv_title" type="id" />
+    <item name="userhome_header" type="id" />
+    <item name="bottom_view" type="id" />
+    <item name="tv_content" type="id" />
+    <item name="bt_no" type="id" />
+    <item name="bt_yes" type="id" />
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="view_home_shop" type="id" />
+    <item name="common_webview_progress" type="id" />
+    <item name="common_webview" type="id" />
+    <item name="iv_img" type="id" />
+    <item name="tv_tag" type="id" />
+    <item name="tv_tag01" type="id" />
+    <item name="tv_tag02" type="id" />
+    <item name="tv_tag03" type="id" />
+    <item name="tv_sale" type="id" />
+    <item name="tv_auth" type="id" />
+    <item name="tv_price" type="id" />
+    <item name="tv_teacher" type="id" />
+    <item name="tv_room" type="id" />
+    <item name="tv_service" type="id" />
+    <item name="tv_distance" type="id" />
+    <item name="checkbox" type="id" />
+    <item name="checkbox_tv" type="id" />
+    <item name="bt_ok" type="id" />
+    <item name="view_shop" type="id" />
+    <item name="checkbox_group" type="id" />
+    <item name="tv_shop_name" type="id" />
+    <item name="iv_folder" type="id" />
+    <item name="tv_price_original" type="id" />
+    <item name="tv_name" type="id" />
+    <item name="tv_sku" type="id" />
+    <item name="view_num" type="id" />
+    <item name="bt_reduce_num" type="id" />
+    <item name="tv_sel_num" type="id" />
+    <item name="bt_add_num" type="id" />
+    <item name="bt_delete" type="id" />
+    <item name="iv_mask" type="id" />
+    <item name="tv_num" type="id" />
+    <item name="bt_scan" type="id" />
+    <item name="tv_account" type="id" />
+    <item name="tv_jifen" type="id" />
+    <item name="tv_benefit" type="id" />
+    <item name="tv_discount" type="id" />
+    <item name="tv_amount" type="id" />
+    <item name="vertical_view_pager" type="id" />
+    <item name="tv_home" type="id" />
+    <item name="bt_join_cart" type="id" />
+    <item name="bt_buy_now" type="id" />
+    <item name="dot_views" type="id" />
+    <item name="tv_sub_title" type="id" />
+    <item name="tv_pull_load" type="id" />
+    <item name="tv_brand" type="id" />
+    <item name="tv_introduction" type="id" />
+    <item name="sku_view" type="id" />
+    <item name="iv_shop_img" type="id" />
+    <item name="tv_shop_intro" type="id" />
+    <item name="tv_address" type="id" />
+    <item name="webview" type="id" />
+    <item name="show_view" type="id" />
+    <item name="view_root" type="id" />
+    <item name="scrollview" type="id" />
+    <item name="listview_goods" type="id" />
+    <item name="view_user_addr" type="id" />
+    <item name="tv_user_name" type="id" />
+    <item name="tv_user_phone" type="id" />
+    <item name="tv_user_addr" type="id" />
+    <item name="tv_blank_addr" type="id" />
+    <item name="tv_discount_lable" type="id" />
+    <item name="et_discount_num" type="id" />
+    <item name="tv_discount_function" type="id" />
+    <item name="checkbox_discount" type="id" />
+    <item name="view_use_jf" type="id" />
+    <item name="listview_price" type="id" />
+    <item name="confirm_address_clicked_rl" type="id" />
+    <item name="iv_choosed" type="id" />
+    <item name="bt_edit" type="id" />
+    <item name="edit_address_name" type="id" />
+    <item name="edit_address_phone" type="id" />
+    <item name="edit_address_location" type="id" />
+    <item name="icon_address_location" type="id" />
+    <item name="edit_address_detail_address" type="id" />
+    <item name="edit_address_checkbox" type="id" />
+    <item name="iv_pay_way" type="id" />
+    <item name="tv_pay_way" type="id" />
+    <item name="tv_total_price" type="id" />
+    <item name="bt_look_detail" type="id" />
+    <item name="bt_contact_sale" type="id" />
+    <item name="bt_pay" type="id" />
+    <item name="shop_view" type="id" />
+    <item name="tv_total_num" type="id" />
+    <item name="tv_order_type" type="id" />
+    <item name="listview_order" type="id" />
+    <item name="tv_order_no" type="id" />
+    <item name="tv_order_time" type="id" />
+    <item name="tv_pay_time" type="id" />
+    <item name="tv_deliver_time" type="id" />
+    <item name="tv_deal_time" type="id" />
+    <item name="empty_view" type="id" />
+    <item name="sku_view_parent" type="id" />
+    <item name="hot_word_view" type="id" />
+    <item name="tv_screen_word" type="id" />
+    <item name="tv_screen" type="id" />
+    <item name="et_contact_person" type="id" />
+    <item name="et_qq" type="id" />
+    <item name="et_mail" type="id" />
+    <item name="et_business_address" type="id" />
+    <item name="et_phone" type="id" />
+    <item name="tv_unread_msg" type="id" />
+    <item name="tv_look_detail" type="id" />
+    <item name="et_apply_role" type="id" />
+    <item name="tv_register" type="id" />
+    <item name="et_name" type="id" />
+    <item name="tv_forget_password" type="id" />
+    <item name="et_password" type="id" />
+    <item name="et_password_again" type="id" />
+    <item name="et_checkcode" type="id" />
+    <item name="bt_check_code" type="id" />
+    <item name="et_scan_code" type="id" />
+    <item name="bt_cancel" type="id" />
+    <item name="tv_phone" type="id" />
+    <item name="tv_state" type="id" />
+    <item name="top_view" type="id" />
+    <item name="iv_business_licence01" type="id" />
+    <item name="iv_business_licence02" type="id" />
+    <item name="iv_tax_registration_form01" type="id" />
+    <item name="iv_tax_registration_form02" type="id" />
+    <item name="iv_legal_person_ID01" type="id" />
+    <item name="iv_legal_person_ID02" type="id" />
+    <item name="tv_original_price" type="id" />
+    <item name="tv_time" type="id" />
+    <item name="rl_bottom" type="id" />
+    <item name="view_mask" type="id" />
+
+</resources>

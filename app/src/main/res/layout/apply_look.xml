@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white" >
+
+            <View style="@style/common_divider_line" />
+
+            <TextView
+                android:id="@id/tv_name"
+                style="@style/edit_address_tv"
+                android:text="带看楼盘：" />
+
+            <EditText
+                android:id="@id/edit_address_name"
+                style="@style/edit_address_et"
+                android:layout_toRightOf="@+id/tv_name"
+                android:editable="false"
+                android:hint="请选择带看楼盘"
+                android:maxLength="8"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_folder_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white" >
+
+            <View style="@style/common_divider_line" />
+
+            <TextView
+                android:id="@+id/tv_detail_address"
+                style="@style/edit_address_tv"
+                android:text="带看价格：" />
+
+            <EditText
+                android:id="@id/edit_address_detail_address"
+                style="@style/edit_address_et"
+                android:layout_toRightOf="@+id/tv_detail_address"
+                android:hint="请输入带看楼盘价格"
+                android:singleLine="true" />
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+                android:textSize="@dimen/F6"
+                android:textColor="@color/C7"
+                android:layout_marginTop="20dp"
+                android:text="请上传图片资料" />
+
+        <GridView
+            android:id="@+id/photos_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

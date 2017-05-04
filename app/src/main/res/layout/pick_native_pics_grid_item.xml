@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/pick_native_pics"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/pick_native_pics_select"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:background="@null" />
+
+</RelativeLayout>

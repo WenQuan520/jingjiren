@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/vp_imgs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/vp_banners"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:id="@id/dot_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/vp_banners"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+    </LinearLayout>
+    
+    <View 
+        android:id="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/common_bg"
+        android:layout_below="@id/vp_banners"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/divider">
+        
+        <View 
+            android:id="@id/divider_line1"
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:background="@color/devider_line"
+            android:layout_centerInParent="true"/>
+        
+        <TextView 
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C8"
+            android:textSize="@dimen/F4"
+            android:layout_toLeftOf="@id/divider_line1"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:id="@+id/iv_header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_header_title"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView 
+            android:id="@+id/tv_header_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/divider_line1"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F2"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

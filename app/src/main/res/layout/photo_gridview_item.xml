@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp" >
+
+        <ImageView
+            android:id="@+id/photo_gridview_item_img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/photo_gridview_item_del"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="88dp"
+        android:src="@drawable/img_del_photo" />
+
+</FrameLayout>
+

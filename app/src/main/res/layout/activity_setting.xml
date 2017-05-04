@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+    
+    <RelativeLayout
+        android:id="@+id/rela_about_us"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="@string/about_us" />
+
+        <TextView
+            style="@style/setting_sub_title_style" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_suggest"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="@string/suggest" />
+
+        <TextView
+            style="@style/setting_sub_title_style" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_check_version"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="@string/check_version" />
+
+        <TextView
+            android:id="@+id/tv_check_version"
+            style="@style/setting_sub_title_style" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_connect_manager"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="联系客户经理" />
+
+        <TextView
+            android:id="@+id/tv_manager"
+            style="@style/setting_sub_title_style" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@id/bt_ok"
+        style="@style/bt_yellow"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_out"/>
+
+</LinearLayout>

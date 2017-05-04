@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="问题分类"
+        android:textColor="@color/C6"
+        android:textSize="@dimen/F4" />
+
+    <RelativeLayout
+        android:id="@+id/rela_zhuce"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="注册账号" />
+
+        <TextView style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_yewucaozuo"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="业务操作" />
+
+        <TextView style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_yejiguishu"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="业绩归属" />
+
+        <TextView
+            android:id="@+id/tv_check_version"
+            style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_wodeqianbao"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="我的钱包" />
+
+        <TextView
+            style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_xingweizhunze"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="行为准则" />
+
+        <TextView
+            style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_tousujianyi"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="投诉建议" />
+
+        <TextView
+            style="@style/setting_sub_title_style" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

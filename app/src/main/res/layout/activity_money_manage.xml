@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <RelativeLayout
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@id/bt_title_left"
+            android:layout_width="60.0dip"
+            android:layout_height="@dimen/title_bar_height"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_back_arrow"
+            android:paddingLeft="15dip"
+            android:paddingRight="20.0dip" />
+
+        <TextView
+            android:id="@id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="佣金管理"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ts_title_bar" />
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="可提现(万元)"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/F5" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="5.5"
+            android:textColor="#ffffff"
+            android:textSize="46sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_top"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myfuction_items_selecter"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="0"
+                android:textColor="@color/title_bg"
+                android:textSize="@dimen/F13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_total"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@null"
+                android:text="应结总佣金(万)"
+                android:textColor="@color/C8"
+                android:textSize="@dimen/F2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myfuction_items_selecter"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/tv_tixian_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="0"
+                android:textColor="@color/title_bg"
+                android:textSize="@dimen/F13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tixian_finish"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@null"
+                android:text="已提现(万)"
+                android:textColor="@color/C8"
+                android:textSize="@dimen/F2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/myfuction_items_selecter"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/tv_tixian_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="0"
+                android:textColor="@color/title_bg"
+                android:textSize="@dimen/F13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tixian_ing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@null"
+                android:text="提现中(万)"
+                android:textColor="@color/C8"
+                android:textSize="@dimen/F2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_order"
+        android:padding="10dp"
+        android:text="交易明细："
+        android:textColor="@color/C6"
+        android:textSize="@dimen/F4" />
+    
+    <ListView 
+        android:id="@+id/listview"
+        style="@style/common_list_view"
+        android:background="#ffffff"
+        android:layout_marginBottom="@dimen/button_height"
+        android:layout_below="@+id/tv_detail">
+        
+    </ListView>
+    
+    <Button 
+        android:id="@id/bt_ok"
+        style="@style/bt_yellow"
+        android:layout_alignParentBottom="true"
+        android:text="提现"/>
+
+</RelativeLayout>

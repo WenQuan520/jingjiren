@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <RelativeLayout
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxWidth="56dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:text="广州"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/F4" />
+
+        <ImageView
+            android:id="@+id/iv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/tv_city"
+            android:src="@drawable/qgh_ic_dizhi" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/qgh_ic_sousuo" />
+    </RelativeLayout>
+
+    <cn.softbank.purchase.widget.MyListView
+        android:id="@+id/listview"
+        style="@style/common_list_view"
+        android:layout_below="@id/title_bar"
+        android:background="#ffffff" >
+    </cn.softbank.purchase.widget.MyListView>
+    
+    <cn.softbank.purchase.widget.HomeSortNaviBar 
+        android:id="@+id/sort_navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/title_bar" />
+    
+    <ListView
+        android:id="@+id/listview_sort"
+        style="@style/common_list_view"
+        android:visibility="gone"
+        android:background="#7f000000" >
+    </ListView>
+
+</RelativeLayout>

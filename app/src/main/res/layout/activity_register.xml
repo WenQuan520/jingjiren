@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+    
+    <cn.softbank.purchase.widget.MyEditText 
+        android:id="@id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:textColor="@color/C8"
+        android:textSize="@dimen/F4"
+        android:hint="@string/input_phone"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLength="11"
+        android:textColorHint="@color/C6"/>
+    
+    <View style="@style/common_divider_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_phone"/>
+    
+    <EditText 
+        android:id="@+id/et_imgcode"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="1px"
+        android:background="#ffffff"
+        android:textColor="@color/C8"
+        android:textSize="@dimen/F4"
+        android:hint="@string/input_img_code"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLength="6"
+        android:textColorHint="@color/C6"/>
+    
+    <ImageView 
+        android:id="@+id/bt_img_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="9dp" />
+    
+    <View style="@style/common_divider_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_imgcode"/>
+    
+    <cn.softbank.purchase.widget.MyEditText 
+        android:id="@id/et_checkcode"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_imgcode"
+        android:layout_marginTop="1px"
+        android:background="#ffffff"
+        android:textColor="@color/C8"
+        android:textSize="@dimen/F4"
+        android:hint="@string/input_check_code"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLength="6"
+        android:textColorHint="@color/C6"/>
+    
+    <Button 
+        android:id="@id/bt_check_code"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_imgcode"
+        android:layout_marginTop="9dp"
+        android:textSize="@dimen/F3"
+        android:textColor="@color/C1"
+        android:background="@drawable/bt_bottom_gray_normal"
+        android:clickable="false"
+        android:text="@string/get_check_code"/>
+    
+    <View style="@style/common_divider_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_checkcode"/>
+    
+    <cn.softbank.purchase.widget.MyEditText 
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_checkcode"
+        android:layout_marginTop="1px"
+        android:background="#ffffff"
+        android:textColor="@color/C8"
+        android:textSize="@dimen/F4"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLength="16"
+        android:textColorHint="@color/C6"/>
+    
+    <Button 
+        android:id="@id/bt_ok"
+        style="@style/bt_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="@string/submit"/>
+    
+
+</RelativeLayout>

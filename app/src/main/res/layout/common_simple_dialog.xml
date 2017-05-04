@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/goods_details_dialog" >
+
+    <TextView
+        android:id="@id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLines="10"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/C8"
+        android:textSize="@dimen/F5" />
+
+    <View
+        android:id="@id/bottom_view"
+        style="@style/common_divider_line"
+        android:layout_below="@id/tv_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/bottom_view"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@id/bt_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F4" />
+        
+        <View 
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/devider_line"/>
+
+        <TextView
+            android:id="@id/bt_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/C23"
+            android:textSize="@dimen/F4" />
+    </LinearLayout>
+
+</RelativeLayout>

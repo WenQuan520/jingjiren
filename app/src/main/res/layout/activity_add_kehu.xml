@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:text="基本资料："
+                android:textColor="@color/C6"
+                android:textSize="@dimen/F4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@id/tv_name"
+                    style="@style/edit_address_tv"
+                    android:text="客户姓名：" />
+
+                <EditText
+                    android:id="@id/edit_address_name"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:hint="请输入客户姓名"
+                    android:maxLength="8"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_detail_address"
+                    style="@style/edit_address_tv"
+                    android:text="手机号码：" />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_detail_address"
+                    android:hint="请输入客户手机号"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/edit_address_tv"
+                    android:text="性        别：" />
+
+                <LinearLayout
+                    android:id="@+id/ll_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_sex"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <cn.softbank.purchase.widget.MyCheckBox
+                        android:id="@+id/checkbox_boy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_boy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:text="男"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/ll_boy"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <cn.softbank.purchase.widget.MyCheckBox
+                        android:id="@+id/checkbox_girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_girl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:text="女"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F5" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_zixun_xiangmu"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_xiangmu"
+                    style="@style/edit_address_tv"
+                    android:text="咨询项目：" />
+
+                <EditText
+                    android:id="@+id/edit_xiangmu"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_xiangmu"
+                    android:editable="false"
+                    android:hint="请选择客户意向楼盘"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_folder_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:text="需求意向："
+                android:textColor="@color/C6"
+                android:textSize="@dimen/F4" />
+            
+            <RelativeLayout
+                android:id="@+id/view_area"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/edit_address_tv"
+                    android:text="区        域：" />
+
+                <EditText
+                    android:id="@+id/edit_area"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_area"
+                    android:editable="false"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_folder_right" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/view_price"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/edit_address_tv"
+                    android:text="价        格：" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_price"
+                    android:editable="false"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_folder_right" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/view_fangxing"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_fangxing"
+                    style="@style/edit_address_tv"
+                    android:text="房        型：" />
+
+                <EditText
+                    android:id="@+id/edit_fangxing"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_fangxing"
+                    android:editable="false"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_folder_right" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/view_mianji"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_mianji"
+                    style="@style/edit_address_tv"
+                    android:text="面        积：" />
+
+                <EditText
+                    android:id="@+id/edit_mianji"
+                    style="@style/edit_address_et"
+                    android:layout_toRightOf="@+id/tv_mianji"
+                    android:editable="false"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_folder_right" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:background="@android:color/white" >
+
+                <View style="@style/common_divider_line" />
+
+                <TextView
+                    android:id="@+id/tv_beizhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="15dp"
+                    android:text="要        求："
+                    android:textColor="@color/C7"
+                    android:textSize="@dimen/F6" />
+
+                <EditText
+                    android:id="@+id/edit_beizhu"
+                    style="@style/edit_address_et"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tv_beizhu"
+                    android:background="@drawable/bg_search"
+                    android:gravity="top|left"
+                    android:hint="请输入客户要求"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

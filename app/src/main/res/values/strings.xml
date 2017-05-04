@@ -1,0 +1,246 @@
+<resources>
+
+    <string name="app_name">掌房通</string>
+    
+    <!-- 首页 -->
+    <string name="rob">抢购</string>
+    <string name="date">预约</string>
+    <string name="self">定制</string>
+    <string name="home">首页</string>
+    <string name="chat">热聊</string>
+    <string name="cart">购物车</string>
+    <string name="my">我的</string>
+    
+    <!-- 个人中心 -->
+    <string name="friend_desc">个人资料</string>
+    <string name="guess_like">猜你喜欢</string>
+    <string name="line_customer">在线客服</string>
+    <string name="set">设置</string>
+    <string name="person_info">个人信息</string>
+    <string name="touxiang">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="live_address">居住地</string>
+    <string name="receive_address">收货地址</string>
+    <string name="boy">帅哥</string>
+    <string name="girl">美女</string>
+    <string name="nick_name_length">昵称最长为11个字</string>
+    <string name="input_nick_name">请输入昵称</string>
+    <string name="update_name">修改昵称</string>
+    <string name="choose_sex">请选择性别</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_icon_success">头像上传成功</string>
+    <string name="kefu_tel">4008813879</string>
+    <string name="update_psw">修改密码</string>
+    <string name="bind_third">绑定手机号</string>
+    <string name="suggest">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="check_version">检查版本</string>
+    <string name="login_out">退出登录</string>
+    <string name="suggest_tip">您的反馈是我们改进的动力，欢迎提出建议和意见，我们将尽快跟进提升用户体验</string>
+    <string name="suggest_null">意见反馈不能为空</string>
+    <string name="already_new">已经是最新版</string>
+    <string name="sugget_ok">提交成功，谢谢您的反馈</string>
+    <string name="applay_refund">用户申请退款(订单号：%1$s)</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="all">全部</string>
+    
+    <string name="pick_photos">选择照片</string>
+	<string name="pl_choosepic">请选择相片</string>
+	<string name="sel_pics_limit">最多只能选择{}张图片</string>
+	<string name="scan_img_failed">图片解析失败</string>
+	<string name="goods_list_sort_default">综合</string>
+    <string name="goods_list_sort_sales">销量</string>
+    <string name="goods_list_sort_price">价格</string>
+    <string name="the_latest">最新</string>
+    <string name="button_save">保存</string>
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="empty_list_goods">抱歉,没有找到符合条件的商品~</string>
+    
+    <!-- 联系客服模块 -->
+    <string name="artificial_service">人工服务</string>
+    <string name="contact_customer">联系客服</string>
+    <string name="artificial_servicehint">服务时间为每天</string>
+    <string name="artificial_servicehint_number">8:30-23:30</string>
+    <string name="customer_online">在线客服</string>
+    <string name="customer_service_phone">客服热线</string>
+    <string name="customer_service_hint">温馨提示：春节期间 服务时间为每天</string>
+    <string name="artificial_servicehint_sf">10:00-18:00</string>
+    <string name="customer_service_phone_number">4008813879</string>
+    
+    <!-- 选择地址 -->
+    <string name="choose_addr">选择地址</string>
+    <string name="choose_city">选择城市</string>
+    <string name="chooseaddress_title">请输入地址</string>
+    <string name="hot_city">热门城市</string>
+    <string name="location_city">您当前定位的城市： %1$s</string>
+    <string name="nofound_address">在当前区域找不到这个地址</string>
+    <string name="searchcity_title">请输入地址</string>
+    <string name="loca_city">当前城市:</string>
+    <string name="switch_city">切换城市</string>
+    <string name="no_found_address">抱歉未获取到您当前的位置</string>
+    <string name="input_sel_area">请输入所选区域内地址</string>
+    <string name="default_city">杭州市</string>
+    <string name="default_province">浙江省</string>
+    <string name="default_area">浙江省 杭州市 上城区</string>
+    <string name="input_name">请输入收货人名字</string>
+
+    
+    <!-- UI异常处理 -->
+    <string name="click_refresh">点击刷新</string>
+    <string name="try_loading">正在努力加载中...</string>
+    <string name="error_net">抱歉,当前网络不佳~</string>
+    <string name="no_order_datas">暂时没有此订单数据哦~</string>
+    <string name="error_server">服务器正在开小差...</string>
+    <string name="operate_fail">执行失败</string>
+    <string name="empty_cart_tip">购物车暂时没有商品哟~</string>
+    <string name="empty_data">暂时没有数据哟~</string>
+    <string name="operate_error">操作失败</string>
+    <string name="progress_paying">支付结果确认中</string>
+    
+    <!-- 登陆注册相关 -->
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_password_again">请再次输入密码</string>
+    <string name="get_check_code">获取验证码</string>
+    <string name="input_check_code">请输入验证码</string>
+    <string name="input_img_code">请输入图形验证码</string>
+    <string name="check_code_error">验证码错误</string>
+    <string name="input_legal_phone">请输入一个合法的手机号</string>
+    <string name="next_step">下一步</string>
+    <string name="finish">完成</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="send_again">重新发送</string>
+    <string name="send_ok">已经将验证码发送至</string>
+    <string name="rest">剩余</string>
+    <string name="login">登录</string>
+    <string name="login_register">登录/注册</string>
+    <string name="submit">提交</string>
+    <string name="login_now">立刻登录</string>
+    <string name="go_login">去登录</string>
+    <string name="check_flag">短信验证码为：</string>
+    <string name="register_underline"><u>注册账号</u></string>
+    <string name="register">注册</string>
+    <string name="phone_name">手机号/姓名</string>
+    <string name="password">密码</string>
+    <string name="forget_password_underline"><u>忘记密码?</u></string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="hang_out">随便逛逛>></string>
+    <string name="account_not_null">手机号不能为空</string>
+    <string name="password_not_null">密码不能为空</string>
+    <string name="checkcode_not_null">验证码不能为空</string>
+    <string name="password_not_same">两次输入的密码不一致</string>
+    <string name="fast_register">快速注册</string>
+    <string name="weixin">微信</string>
+    <string name="taobao">淘宝</string>
+    <string name="weibo">微博</string>
+    <string name="login_third">使用第三方账号登录</string>
+    <string name="reset_psw">请设置新的密码</string>
+    <string name="search_goods">搜索商品</string>
+    <string name="hot">热门</string>
+    <string name="search_history">历史搜索</string>
+    <string name="tv_search_clear">清空历史搜索</string>
+    <string name="search">搜索</string>
+    <string name="wait_pay">待付款</string>
+    <string name="wait_deliver">待发货</string>
+    <string name="wait_receive">待收货</string>
+    <string name="wait_evalution">待评价</string>
+    <string name="refund_sell">退款/售后</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    
+    <!-- app 更新 -->
+    <string name="downapp_loading">正在下载</string>
+    <string name="downapp_done">下载完成,点击安装。</string>
+    <string name="downapp_faile">下载失败</string>
+    <string name="downapp_now">马上更新</string>
+    <string name="downapp_not">残忍拒绝</string>
+    <string name="downapp_content">检测有新版本，您是否要更新？</string>
+    <string name="downapp_new">当前版本为最新版本！</string>
+    <string name="insnall_app">安装软件</string>
+    <string name="exption">异常</string>
+    <string name="redownload">点击重新下载</string>
+    <string name="download_done">下载完成点击安装</string>
+    <string name="appversion">当前版本:%1$s</string>
+    <string name="download_dialog">正在下载：%1$s</string>
+    <string name="download">下载</string>
+    <string name="pause">暂停</string>
+    <string name="fujianneirong">2、甲、乙双方明确：乙方最终可获得的合作收入计算方式如下：
+        \n平台运营管理与服务费=每月合作实收业绩的20%；  
+        \n合作收入=每月合作实收业绩（百分之一到百分之二十）合作收入分配比例（参照上表）；
+        \n实收业绩：即为甲、乙双方每月合作收入业绩中按本合同约定，归属乙方的部分。
+        \n3、乙方（属初次合作的），以加入的第一天开始计算给予一个月的免收“掌房通平台使用费”的优惠期及一个月的“掌房通平台使用费五折”的优惠期。优惠期结束后按本协议的约定向甲方支付微房通平台使用费。
+        \n4、乙方之前与甲方开展过合作，在之前合作终止后再次合作的，以加入的第一天开始计算给予一个月的免收“掌房通平台使用费”的优惠期及一个月的“掌房通平台使用费五折”的优惠期。优惠期结束后按本协议的约定向甲方支付掌房通平台使用费。
+        </string>
+    
+    <string name="downapp_content_wifis">友情提示，当前状态不是WiFi！您可以连接WiFi继续下载。</string>
+    <string name="agreenment">
+        甲、乙双方根据有关法律、法规，本着平等自愿的原则，经协商一致，签订本协议，以资共同遵守。
+        \n一、合作性质
+        \n1、甲、乙双方依照法律规定，在平等自愿的基础上开展业务合作，双方是业务合作关系。
+\n2、乙方利用甲方提供的平台、信息、资源，与甲方合作开展新房销售业务，乙方开展业务中产生的责任及日常费用由乙方自行承担，甲、乙双方按本协议的约定分配合作产生的佣金。
+\n二、合作业务范围
+\n1、甲方负责获取住宅、商业、办公、厂房等物业盘源的代理销售/租赁的相关权利，乙方为上述物业介绍有购买/租赁需求的客户；
+\n2、甲、乙双方共同合作在开发商与购房客户之间居间沟通，传递交易双方意愿，协调交易双方立场，促成房地产买卖协议的签订；
+\n3、甲、乙双方书面约定其他需要完成的其他事项。
+\n三、合作期限
+\n本协议有效期自%1$s止，协议到期日前，双方未达成书面续签协议的，本协议到期自动终止。
+\n四、合作收入
+\n1、乙方的合作收入：在乙方已独立促成其推介的客户与开发商签订《商品房买卖/预售协议》/《房租租赁合同》且开发商已依据其与甲方签订的相关代理协议，实际向甲方支付全部佣金后二个星期内，甲、乙双方按照本协议附件一的约定分配开发商已支付的佣金作为乙方应得的合作收入。
+\n2、如乙方收到合作收入后，乙方推介的客户发生退房或其他纠纷导致甲方须向开发商或交易方返还全部或部分佣金的，则乙方应在收到甲方的书面通知之日起 7天内，按甲方返还的比例相应地向甲方返还乙方已收到的合作收入。乙方逾期返还的，甲方有权在后期应分配予乙方的佣金中扣除相应费用。
+\n3、合作期间乙方应按照附件一约定的标准向甲方支付移动端、PC端平台使用费、其他各项成本开支等，甲方可在应付乙方的合作收入中直接扣除。
+\n4、合作期间，双方依据乙方选择的合作模式，按附件一约定的标准，明确双方费用支付主体及费用名目、金额。
+\n五、甲方权利与义务
+\n1、甲方应积极获取住宅、商业、办公、厂房等物业盘源的代理销售、租赁的代理权利。
+\n2、甲方保证：乙方可向甲方拥有代理权的所有合作项目推介意向客户，甲方向乙方不得隐瞒拥有代理权的合作项目。
+\n3、本协议合作业务的各项管理办法和实施细则应由甲、乙双方基于商业惯例及针对不同项目要求进行确认。
+\n4、甲方有义务在乙方提出要求后，向乙方提供相关业务知识咨询的服务；有权对乙方在本协议范围内的相关活动进行监督。
+\n5、甲方应在收到开发商支付的佣金后，应按本协议的约定，及时足额的与乙方分配佣金作为乙方的合作收入。
+\n六、乙方（含乙方的工商登记投资人、乙方的业务人员，下同）权利与义务
+\n1、乙方有权获得必要的业务知识咨询；有义务主动了解并知悉与房地产经纪业务有关的法律法规规章、房地产行业协会的相关规定；
+\n2、乙方自行承担开展合作业务中产生的一切费用、责任和风险，因乙方（如乙方为法人的，含其经办业务人员）在开展合作业务中遭受人身、财产损害或造成他人人身、财产损害或有违法、犯罪行为的，由乙方自行负责，与甲方无关；如甲方因乙方在合作过程中的行为受到第三方追究、索赔或其他经济、法律责任、行政处罚的，有权向乙方追偿。
+\n3、未经甲方同意或授权，不得以甲方名义向客户作出任何承诺，或与客户签订任何协议；更不得私自向收取客户的保证金、定金、佣金等任何款项，合作盈利由甲方指定的专用帐户收取；如违反前述规定，应将所得款项、利益交还甲方，并向甲方加付相等于所得款项、利益一倍的违约金，如违约金不足以弥补甲方损失的，乙方应赔偿甲方全部损失。
+\n4、乙方及与其有紧密关系的任何第三方不得利用甲方的信息、资源和条件，避开甲方私自或与他人合作开展业务和工作，以达到私收佣金报酬等款项的目的，也不得以任何方式经营或协助他人经营与合作业务相同或类似的任何业务，或为经营与合作业务相同或类似的业务的机构、个人担任职务或提供任何帮助。否则，乙方应将违约所得款项、利益交还甲方，并向甲方加付相等于所得款项、利益一倍的违约金。
+\n5、乙方开展工作必须遵守国家法律法规规章及相关部门、行业协会的管理规定，并获取相关资格，工作过程中须接受甲方的业务指导；
+\n6、乙方同意在合作过程中，统一使用甲方提供的宣传资料、协议、费率、票据单证、表格等资料文件，且未经甲方书面同意，不得擅自修改；
+\n7、如因乙方原因无法独立完成工作（即提供本条第 3款所述服务）的，应及时告知甲方，并同意甲方安排其他人员接替乙方或协助乙方工作；在此情形下，乙方应得的合作收入不按第四条第1款及附件一执行，具体费用由甲方另行协商确定；
+\n8、乙方应对获悉的甲方商业秘密（包括但不限于甲方享有或代理的住宅、商业、办公、厂房等物业信息、开发商信息、市场调研报告等）保密义务，未经甲方书面同意，不得向任何第三方披露上述信息，也不得在本协议终止后利用已获悉的甲方秘密为乙方谋取任何利益。本协议有效期内及终止后，本保密条款仍具有法律效力，乙方仍需遵守。
+\n9、本协议终止或解除后，乙方须于终止或解除当日将所掌握或持有的资料信息（包括但不限于乙方已介绍给甲方的客户、各种协议文件、票据及其他资料信息，以及载有前述资料信息的 U盘、硬盘、文本等物质载体）及未交接款项完整地送交甲方，并不得将前述资料信息拷贝、复制留存；乙方不得以任何理由损害开发商、客户的利益。
+\n七、协议的变更、解除
+\n1、本协议生效后，任意一方均不得擅自变更、解除。确有特殊原因需变更的，经双方协商一致后，以书面形式变更、解除；
+\n2、甲、乙双方可在协议有效期内随时要求解除协议，但必须提前二个月以书面形式通知另一方，另一方在接到解除协议的通知之日三日后，本协议解除，双方均无需向另一方承担违约责任。
+\n3、合作期间，乙方连续三个月没有合作收入的，甲方有权单方解除合作协议，甲方无需承担任何违约责任。
+\n八、违约责任
+\n1、乙方违反本协议第六条规定义务或因乙方的行为引起开发商、客户投诉、诉讼的，或因乙方故意或过失导致甲方利益受损的，乙方应当承担赔偿责任，甲方有权单方解除本协议，要求乙方赔偿损失，甲方亦有权从应付但尚未支付给乙方的合作收入中直接扣除；
+\n2、任意一方因其他违规、违法行为给另一方造成损失的，该方应予赔偿。
+\n3、乙方或乙方经办相关业务人员有以下行为的，甲方有权单方解除本协议，甲方无需应向乙方支付，但尚未支付给乙方的合作费用，作为乙方应付的违约金，违约金不足以弥补甲方损失时，甲方有权继续追究乙方责任：
+\n(1)以达到私收佣金报酬等款项的目的,私自与他人合作开展业务和工作；
+\n(2)私自收取佣金、回扣或好处费；
+\n(3)私收、挪用、侵占交易资金；
+\n(4)伪造公章、合同、票据等造假行为；
+\n(5)擅自使用或向第三方转卖、泄露甲方商业秘密的；
+\n(6)被刑事拘留或被刑事处罚的；
+\n(7)乙方本人及本人之配偶、直系血亲以任何方式经营或协助他人经营与合作业务相同或类似的任何业务，或为经营与合作业务相同或类似的业务的机构、个人担任职务或提供任何帮助；
+\n(8)其他违法违规行为或严重违反本协议的行为；
+\n九、应当明确的其他事项
+\n1、乙方应当按房地产行业主管部门/协会要求办理上岗证、经纪人证、经纪人助理证，乙方可要求甲方提供相应的协助，但由此产生的办理、续期、年审等费用由乙方自行承担。
+\n2、乙方知悉并保证：上述甲方协助乙方办理上岗证、经纪人证、经纪人助理证、密钥及其他证件执照及此后的续期、年审手续等活动的行为，以及乙方印制、使用包含有甲方标志、商号的业务牌、名片等，均是基于本协议而不是劳动协议关系所作的行为，乙方不得以此为由主张与甲方存在劳动协议关系。
+\n十、争议的解决
+\n本协议项下发生的任何争议，双方应协商解决，协商不成的，交由甲方住所地所在人民法院通过诉讼解决。
+\n十一、其他
+\n1、本协议未尽事宜，甲、乙双方协商另行签订补充协议，补充协议与本协议具同等法律效力；
+\n2、本协议涉及房地产业的专用名词，按有关法律、法规、规章的有关规定解释，无规定的，按房地产行业惯例解释；
+\n3、为保障业务对接，甲方指定地点为甲方合作联系点。乙方指定地点为乙方联系地址，并选定电子邮箱为另一联系方式。甲乙任何一方的有关通知以快递、电子邮件等方式送达联系地址的，均视为对方已接收；
+\n4、本协议后附合作收入分配、平台使用费的有关方案等，构成本协议的附件，与本协议条款具同等法律效力；
+\n5、本协议自签订之日起生效，一式两份，甲、乙双方各执一份，均具同等法律效力。
+\n附件：合作收入分配
+\n1、甲乙双方具体合作收入分配比例详见下表：合作收入结算时间以不同项目的合同（甲方与相应项目开发商签署的代理合同）规定为准。
+\n（1）全民营销业务合作模式分为全职与兼职两种模式。全职要求一个月最少成交2套（含2套）在一个月内没按规定完成的，降为兼职模式，按兼职佣金比率拿提成
+\n（2）兼职业务模式，只要有客户可带到售楼部与公司对接人对接好相应工作交接，促进成交，签约。
+        </string>
+        
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="#ffffff" >
+
+    <View
+        android:id="@+id/divider_top"
+        style="@style/common_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/divider_top"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/navi_bar_01"
+                style="@style/tv_common_navi_bar02"
+                android:drawableRight="@drawable/mmh_ic_sortdown_checked"
+                android:text="区域"
+                android:textColor="@color/title_bg" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="22dp"
+            android:background="#dcdcdc" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/navi_bar_02"
+                style="@style/tv_common_navi_bar02"
+                android:text="类型" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="22dp"
+            android:background="#dcdcdc" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/navi_bar_03"
+                style="@style/tv_common_navi_bar02"
+                android:text="面积" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="22dp"
+            android:background="#dcdcdc" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/navi_bar_04"
+                style="@style/tv_common_navi_bar02"
+                android:text="价格" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        style="@style/common_divider_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_bg" >
+
+            <LinearLayout
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/title_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_login"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_login"
+                    android:text="@string/login_register"
+                    android:textColor="@color/C8"
+                    android:textSize="@dimen/F6"
+                    android:visibility="gone" />
+
+                <cn.softbank.purchase.widget.CircleImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mmq_ic_weidenglu"
+                    app:circlebgColor="@color/C8"
+                    app:circlebgWidth="1px"
+                    app:isDrawCirclebg="true" />
+
+                <TextView
+                    android:id="@id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/C8"
+                    android:textSize="@dimen/F5" />
+
+                <TextView
+                    android:id="@+id/tv_shenfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_jingjiren"
+                    android:drawableLeft="@drawable/jjr_ic_vip"
+                    android:drawablePadding="3dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="1dp"
+                    android:text="全职经纪人"
+                    android:textColor="#ffcd00"
+                    android:textSize="@dimen/F1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/my_kehu_flag"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/view_top"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="我的客户"
+                android:textColor="@color/C8"
+                android:textSize="@dimen/F5" />
+
+            <View
+                style="@style/common_divider_line"
+                android:layout_below="@id/my_kehu_flag" />
+
+            <LinearLayout
+                android:id="@+id/ll_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_kehu_flag"
+                android:layout_marginTop="1px"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/view_wait_baobei"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/myfuction_items_selecter"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_wait_baobei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="0"
+                        android:textColor="@color/title_bg"
+                        android:textSize="@dimen/F13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_wait_baobei"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:text="待报备"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view_wait_look"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/myfuction_items_selecter"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_wait_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="0"
+                        android:textColor="@color/title_bg"
+                        android:textSize="@dimen/F13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_wait_look"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:text="未带看"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view_wait_deal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/myfuction_items_selecter"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_wait_deal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="0"
+                        android:textColor="@color/title_bg"
+                        android:textSize="@dimen/F13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_wait_deal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:text="未成交"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view_deal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/myfuction_items_selecter"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_deal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:text="0"
+                        android:textColor="@color/title_bg"
+                        android:textSize="@dimen/F13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_deal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:text="已成交"
+                        android:textColor="@color/C8"
+                        android:textSize="@dimen/F2" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_yongjin"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/ll_order"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="佣金管理" />
+                
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_message"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/rela_yongjin" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="消息中心" />
+
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_collection"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/rela_message" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="我的收藏" />
+
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_help"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/rela_collection"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="使用帮助" />
+                
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_work"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/rela_help" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="合作协议" />
+
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_setting"
+                style="@style/setting_rela_style"
+                android:layout_below="@id/rela_work" >
+
+                <TextView
+                    style="@style/setting_title_style"
+                    android:text="设置" />
+
+                <TextView style="@style/setting_sub_title_style" />
+
+                <View
+                    style="@style/common_divider_line"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

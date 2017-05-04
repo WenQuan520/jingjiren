@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <cn.softbank.purchase.widget.ClipImageView
+        android:id="@+id/src_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <cn.softbank.purchase.widget.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rela_cliping"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#141414" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:text="重新选择"
+            android:onClick="returnMic"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="14dp"
+            android:background="@null"
+            android:onClick="photoMic"
+            android:text="使用照片"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

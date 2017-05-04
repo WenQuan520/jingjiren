@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.yicheng.jingjiren" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="cn.atmobi.mamhao.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="cn.softbank.purchase.base.MyApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.softbank.purchase.activivty.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults"
+            android:windowSoftInputMode="adjustPan" >
+
+        </activity>
+
+        <!-- 搜索页面 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品列表 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.GoodsListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 商品列表 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.GoodsDetailActitvivty"
+            android:screenOrientation="portrait" />
+        <!-- 选择城市 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ChooseCityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 相册 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.PickNativePics"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.LoginActivity"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.RegisterActivivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.utils.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人资料 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.PersonCenterActivivty"
+            android:screenOrientation="portrait" />
+        <!-- 修改昵称 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.UpdateNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 裁剪图片 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ClipingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.SuggestActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 联系客服 -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ContactKefu"
+            android:screenOrientation="portrait" />
+        <!-- 户型图  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.HuxingPicsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 楼盘卖点  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.SalePointActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的客户  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.MyKehuActitvty"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <!-- 客户详情  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.KehuDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请成交  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ApplyDealActivity"
+            android:screenOrientation="portrait" />
+        <!-- 报备客户  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.BaobeiKehuActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请带看  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ApplyLookActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加客户  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.AddkehuActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择楼盘  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ChooseLoupanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择区域  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ChooseAreaActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择价格  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ChoosePriceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择房型  -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.ChooseFangxingActivity"
+            android:screenOrientation="portrait" />
+        <!-- WebViewActivity -->
+        <activity
+            android:name="cn.softbank.purchase.activivty.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.MoneyManageActivivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.MessageSystemList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.MessageActivityDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.UseHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.softbank.purchase.activivty.LocationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 高德  7b1400d4e804e8a7c3790e6bcb6a2908 -->
+        <!-- 高德  d03d9d1116db7316eae90dee6fdf57dc -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="abaf87ad5dd004d248f5954fadd4c0bc" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1105307717" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 调用新浪原生SDK，需要注册的回调activity -->
+        <intent-filter>
+            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </application>
+
+</manifest>

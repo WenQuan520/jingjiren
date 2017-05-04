@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="common_corner_radius">3dp</dimen>
+    <dimen name="header_height">330dp</dimen>
+    <dimen name="min_header_height">290dp</dimen>
+    <dimen name="scan_handheight_one">75dp</dimen>
+    <dimen name="role_apply_width">55dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">40dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="common_b0_corner_radius">5dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    
+    <!-- 搜索城市 选择区域弹窗 区域最大高度 -->
+    <dimen name="search_gridview_maxheigh">285dp</dimen>
+    <dimen name="search_pop_maxheigh">500dp</dimen>
+    <dimen name="search_gridview_marg">15dp</dimen>
+    
+    <!-- text size -->
+    <dimen name="ts_title_bar">19.0sp</dimen>
+    <!-- 通用字号规范 -->
+    <dimen name="F01">9sp</dimen>
+    <dimen name="F0">10sp</dimen>
+    <dimen name="F1">11sp</dimen>
+    <dimen name="F2">12sp</dimen>
+    <dimen name="F3">13sp</dimen>
+    <dimen name="F4">14sp</dimen>
+    <dimen name="F5">15sp</dimen>
+    <dimen name="F6">16sp</dimen>
+    <dimen name="F7">17sp</dimen>
+    <dimen name="F8">18sp</dimen>
+    <dimen name="F9">19sp</dimen>
+    <dimen name="F10">20sp</dimen>
+    <dimen name="F11">21sp</dimen>
+    <dimen name="F12">22sp</dimen>
+    <dimen name="F13">23sp</dimen>
+    <dimen name="F14">24sp</dimen>
+    <dimen name="F15">25sp</dimen>
+    <dimen name="F16">26sp</dimen>
+    
+</resources>

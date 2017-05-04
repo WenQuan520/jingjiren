@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff" >
+        
+        <ImageView 
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tixian_ic"/>
+        
+        <TextView 
+            android:id="@+id/tv_tixian_falg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现到"
+            android:layout_toRightOf="@+id/iv_img"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F2"/>
+        
+        <TextView 
+            android:id="@+id/tv_tixian_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123@3"
+            android:layout_below="@+id/tv_tixian_falg"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_img"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/C8"
+            android:textSize="@dimen/F5"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="可提现最大金额为："
+        android:textColor="@color/C6"
+        android:textSize="@dimen/F3" />
+
+    <cn.softbank.purchase.widget.MyEditText
+        android:id="@+id/et_name"
+        style="@style/common_et"
+        android:layout_marginTop="10dp"
+        android:hint="请输入要提现的金额"
+        android:inputType="number" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="最低提现金额为100元，审核通过后1-3个工作日到账，前一笔提现完成才能发起下一笔提现"
+        android:textColor="@color/title_bg"
+        android:textSize="@dimen/F3" />
+
+    <Button
+        android:id="@id/bt_ok"
+        style="@style/bt_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:text="提现" />
+
+</LinearLayout>

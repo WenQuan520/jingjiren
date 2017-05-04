@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sectionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dip"
+        android:paddingLeft="8dip"
+        android:gravity="center_vertical"
+        android:text="A"
+        android:textSize="@dimen/F7"
+        android:textColor="@color/C8"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/infoRowContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/listitem_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip" >
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/F5"
+            android:textColor="@color/C8" />
+    </RelativeLayout>
+
+</LinearLayout>

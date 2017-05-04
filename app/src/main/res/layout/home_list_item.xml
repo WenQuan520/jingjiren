@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@id/iv_img"
+        android:layout_width="136dp"
+        android:layout_height="90dp"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="楼盘"
+            android:textColor="@color/C8"
+            android:textSize="@dimen/F5" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_tuan"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:text="公寓"
+            android:textColor="@color/C8"
+            android:textSize="@dimen/F2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_price_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="均价"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F4" />
+
+        <TextView
+            android:id="@id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="200"
+            android:textColor="@color/C26"
+            android:textSize="@dimen/F4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_price"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_img" >
+
+        <TextView
+            android:id="@id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杭州-西湖"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F4" />
+        
+        <TextView
+            android:id="@id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100米"
+            android:drawablePadding="1dp"
+            android:drawableLeft="@drawable/jjr_ic_dizhi"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/C6"
+            android:textSize="@dimen/F4" />
+    </RelativeLayout>
+
+</RelativeLayout>

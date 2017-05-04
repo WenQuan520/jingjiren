@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@id/title_bar"
+        layout="@layout/commom_title_bar" />
+    
+    <RelativeLayout
+        android:id="@+id/rela_icon"
+        style="@style/setting_rela_style"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="@string/touxiang" />
+
+        <TextView
+            android:id="@+id/tv_folder"
+            style="@style/setting_sub_title_style2" />
+        
+        <cn.softbank.purchase.widget.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:circlebgColor="@color/devider_line"
+            app:circlebgWidth="1px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_folder"
+            android:src="@drawable/mmq_ic_weidenglu"
+            app:isDrawCirclebg="true" />
+
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_name"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="真实姓名" />
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_id"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="身份证号码" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_level"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="会员等级" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_city"
+        android:layout_marginTop="10dp"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="所属城市" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_company"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="所属经纪公司" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_store"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="所属分店" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rela_login_name"
+        style="@style/setting_rela_style" >
+
+        <TextView
+            style="@style/setting_title_style"
+            android:text="登录名" />
+
+        <TextView
+            android:id="@+id/tv_login_name"
+            style="@style/setting_sub_title_style2" />
+        
+        <View
+            style="@style/common_divider_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

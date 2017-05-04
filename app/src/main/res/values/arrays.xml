@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="searchcity_sidebar_list">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+    
+    <string-array name="score_rates">
+        <item >1分</item>
+        <item >2分</item>
+        <item >3分</item>
+        <item >4分</item>
+        <item >5分</item>
+    </string-array>
+    <string-array name="hot_citys">
+        <item >北京市</item>
+        <item >上海市</item>
+        <item >广州市</item>
+        <item >深圳市</item>
+        <item >杭州市</item>
+        <item >成都市</item>
+    </string-array>
+</resources>

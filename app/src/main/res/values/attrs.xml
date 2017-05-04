@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+    </declare-styleable>
+
+    <item name="transparent" type="drawable">#00000000</item>
+
+    <declare-styleable name="MyEditTextAttr">
+
+        <!-- Style of the circle indicator. -->
+        <attr name="editDrawableLeft" format="reference" />
+        <attr name="editBackground" format="reference" />
+        <attr name="isFilterRegex" format="string" />
+        <attr name="isFilterEmoji" format="boolean" />
+        <attr name="isShowClose" format="boolean" />
+        <!-- Style of the icon indicator's views. -->
+    </declare-styleable>
+    <declare-styleable name="TimeTextView"></declare-styleable>
+    <declare-styleable name="gridPasswordView">
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="gridColor" format="color" />
+        <attr name="lineWidths" format="dimension" />
+        <attr name="corners" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordTransformation" format="string" />
+        <attr name="passwordType" format="enum">
+            <enum name="numberPassword" value="0" />
+            <enum name="textPassword" value="1" />
+            <enum name="textVisiblePassword" value="2" />
+            <enum name="textWebPassword" value="3" />
+            <enum name="numberVisiblePassword" value="4" />
+            <enum name="textWebVisiblePassword" value="5" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FlexibleRatingBar">
+        <attr name="colorOutlineOn" format="color" />
+        <attr name="colorOutlineOff" format="color" />
+        <attr name="colorOutlinePressed" format="color" />
+        <attr name="colorFillOn" format="color" />
+        <attr name="colorFillOff" format="color" />
+        <attr name="colorFillPressedOn" format="color" />
+        <attr name="colorFillPressedOff" format="color" />
+        <attr name="polygonVertices" format="integer" />
+        <attr name="polygonRotation" format="integer" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="sidebar">
+        <attr name="letterColor" format="reference|color" />
+        <attr name="letterSize" format="dimension" />
+        <attr name="letterSpacing" format="dimension" />
+        <attr name="letterContent" format="reference" />
+        <attr name="letterPaddingTop" format="dimension" />
+        <attr name="letterPaddingBottom" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="myRatingBar">
+        <attr name="itemSize" format="dimension" />
+        <attr name="numStars" format="integer" />
+        <attr name="rating" format="float" />
+        <attr name="interval" format="dimension" />
+        <attr name="ratingbarsrc" format="reference" />
+        <attr name="isedit" format="boolean" />
+        <attr name="miniStar" format="float" />
+    </declare-styleable>
+    
+    <declare-styleable name="circleImageView">
+        <attr name="isDrawCirclebg" format="boolean" />
+        <attr name="circlebgWidth" format="dimension" />
+        <attr name="circlebgColor" format="reference|color" />
+    </declare-styleable>
+    
+    <attr name="myalertDialogStyle" format="reference" />
+
+    <declare-styleable name="DragTopLayout">
+
+        <!--Set the collapse panel offset-->
+        <attr name="dtlCollapseOffset" format="dimension"/>
+
+        <!--Set enable drag over.The default value is true.-->
+        <attr name="dtlOverDrag" format="boolean"/>
+
+        <!--Open the top view after the drag layout is created. The default value is false.-->
+        <attr name="dtlOpen" format="boolean"/>
+
+        <!-- The id of the top view (which will be dragged) -->
+        <attr name="dtlTopView" format="reference" />
+
+        <!-- The content view which will be dragged together with "dtlTopView" -->
+        <attr name="dtlDragContentView" format="reference" />
+
+        <!-- True the top view can be dragged -->
+        <attr name="dtlCaptureTop" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyCheckBox">
+        <attr name="checkOnImg" format="reference" />
+        <attr name="checkOffImg" format="reference" />
+        <attr name="isChecked" format="boolean" />
+        <attr name="isAutoChange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextLinear">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="rightDrawable" format="boolean" />
+        <attr name="topDriver" format="boolean" />
+        <attr name="bottomDriver" format="boolean" />
+        <attr name="apptextColor" format="color" />
+        <attr name="apptextSize" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="selectIndicatorColor" format="color" />
+        <attr name="unIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="MemberHeadView">
+        <attr name="nameColor" format="color" />
+        <attr name="timeColor" format="color" />
+    </declare-styleable>
+</resources>
